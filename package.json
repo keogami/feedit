@@ -1,0 +1,35 @@
+{
+  "name": "feedit",
+  "version": "0.0.1",
+  "description": "A lightweight feedback widget",
+  "main": "dist/feedit",
+  "types": "dist/feedit.d.ts",
+  "browser": "dist/feedit.mjs",
+  "module": "dist/feedit.mjs",
+  "scripts": {
+    "build": "npm run mjs && npm run cjs",
+    "mjs": "tsc -d && cp dist/feedit.js dist/feedit.mjs",
+    "cjs": "tsc -m commonjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keogami/feedit.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "feedback",
+    "widget"
+  ],
+  "author": "keogami",
+  "license": "None",
+  "bugs": {
+    "url": "https://github.com/keogami/feedit/issues"
+  },
+  "homepage": "https://github.com/keogami/feedit#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
